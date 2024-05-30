@@ -7,7 +7,6 @@ import {
   InputLabel,
   MenuItem,
   Select,
-  SelectChangeEvent,
   TextField,
 } from "@mui/material";
 
@@ -36,7 +35,7 @@ export default function Books(props: any) {
 
   //   lista filtrada
   const filteredBooks = books.filter((book: any) => {
-    let response: false;
+    let response= false;
 
     if (filter == "" && gender == "") return book.book;
 
